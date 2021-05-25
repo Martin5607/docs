@@ -1,0 +1,31 @@
+<html>
+
+<body style="color:{{C}}"></body>
+
+<h1> Salary Calculator </h1>
+
+Name: {{name}}
+<br>
+Salary: {{salary}}
+<br>
+{% if salary>3000 %}
+Tax rate is 30%
+Tax is calculated at: {{salary*30/100}}
+{% else %}
+
+{% if salary>2000 %}
+Tax rate is 20%
+Tax is calculated at: {{salary*20/100}}
+{% else %}
+
+{% if salary>1000 %}
+Tax rate is 11%
+Tax is calculated at: {{salary*11/100}}
+{% else %}
+
+Tax rate is 0%
+Tax is calculated at: {{salary*0/100}}
+{% endif %}
+{% endif %}
+{% endif %}
+</html>

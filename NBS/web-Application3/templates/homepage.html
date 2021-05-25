@@ -1,0 +1,12 @@
+<html>
+<center> Type any number </center>
+<input type = "text"><input type = "submit">
+<center> Select any number </center>
+<br>
+{% for a in range(1,100) %}
+
+<a href="http://localhost:81/timestableof/{{a}}">{{a}}</a>
+<br>
+
+{% endfor %}
+</html>
